@@ -1,17 +1,32 @@
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class jichu {
+        static class A{
+            static{
+                System.out.print("1");
+            }
+            public A(){
+                System.out.print("2");
+            }
+        }
+        static class B extends A{
+            static{
+                System.out.print("a");
+            }
+            public B(){
+                System.out.print("b");
+            }
+        }
+        //何问起 hovertree.com
+        public static class Hello{
+            public static void main(String[] args){
+                A ab = new B();
+                ab = new B();
+            }
 
-    public static void main(String[] args) {
-
-        String str = new String("aaa");
-        String str1 = new String("hello");
-        String str2 = new String("hello2");
-
-
-        str1 = str;
-        str2 = str;
-
-        System.out.println(str1==str2);
-        System.out.println(str1.equals(str2));
+        }
 
     }
-}
+

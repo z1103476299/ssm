@@ -27,7 +27,7 @@ public class SeckillServiceImpl implements SeckillService {
 
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Resource
+    @Autowired
     private SeckillDao seckillDao;
 
     @Resource
